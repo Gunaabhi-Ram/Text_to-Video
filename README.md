@@ -18,7 +18,7 @@ This project presents a novel pipeline for transforming textual content from not
 
 **Workflow:**
 
-1. **Colab Notebook 1: Meghana- Grad&Master.ipynb**
+1. **Colab Notebook 1: Grad&Master.ipynb**
    - Upon execution, this notebook initiates a web scraping process, dynamically extracting the textual content from a user-provided link using a designated web scraping library (e.g., BeautifulSoup, Scrapy).
    - The extracted content is then fed into a pre-trained tokenizer (`BartTokenizer.from_pretrained("facebook/bart-large-cnn")`) and model (`BartForConditionalGeneration.from_pretrained("facebook/bart-large-cnn")`) from the Hugging Face library. These models perform text processing and generate smaller, focused prompts based on the overall content.
    - The interface at `gradio` facilitates this interaction, seamlessly guiding the user through the process.
@@ -31,7 +31,7 @@ This project presents a novel pipeline for transforming textual content from not
       * **Denoising Process:** During training, the model learns to iteratively "de-noise" a progressively corrupted version of a real image. This training process enables the model to learn the underlying structure and relationships within image data, allowing it to generate realistic and coherent images from textual prompts.
 
 3. **Automated Video Assembly (Colab Notebook 2 - Automatically triggered):**
-   - A separate Colab notebook, potentially named `Meghana-Adding_audio_n_combine.ipynb`, is automatically triggered once image generation is complete. This notebook is assumed to handle video assembly and audio integration.
+   - A separate Colab notebook, potentially named `Adding_audio_n_combine.ipynb`, is automatically triggered once image generation is complete. This notebook is assumed to handle video assembly and audio integration.
    - Specific implementation details may involve the use of video editing libraries like OpenCV or MoviePy. The exact nature of this stage requires further investigation depending on the availability of the second notebook.
 
 4. **Output Video Presentation:**
